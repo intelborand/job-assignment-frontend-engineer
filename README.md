@@ -107,6 +107,19 @@ This is how we should be able to run the application:
 
 Running the above in fresh clone of this repository should result in the skeleton application to be started and made accessible on http://localhost:8080/.
 
+### Quick Docker run commands
+
+Run frontend production container:
+
+    docker build -t job-assignment-frontend-engineer .
+    docker run --rm -p 8080:80 job-assignment-frontend-engineer
+
+Run backend + frontend dev mode together (backend in Docker, frontend with CRA dev server):
+
+    npm run dev:full
+
+`dev:full` runs `docker-compose up -d && npm start`.
+
 ## Tips
 
 The goal of this task is to provide a discussion context for the subsequent technical interview and is not meant to be time consuming.

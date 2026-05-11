@@ -1,9 +1,10 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
+    "./node_modules/eslint-config-react-app/index.js",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
+    "react-app"
   ],
   "root": true,
   "env": {
@@ -17,10 +18,7 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
-  "plugins": [
-    "@typescript-eslint",
-    "react-hooks"
-  ],
+  "plugins": ["@typescript-eslint", "react-hooks"],
   "settings": {
     "react": {
       "pragma": "React",
